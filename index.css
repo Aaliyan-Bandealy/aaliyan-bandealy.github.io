@@ -529,10 +529,6 @@ body:not(.user-is-tabbing) a:focus {
     transform: scale(1.2);
 }
 
-.work__image-box {
-    margin-bottom: var(--gutter-normal);
-}
-
 @media(min-width: 901px) {
     .work__image-box {
         flex: 1;
@@ -681,6 +677,7 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 10px;
   box-shadow: 0 24px 70px rgba(0,0,0,0.45);
 }
+
 
 
 
