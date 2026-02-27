@@ -633,4 +633,34 @@ body:not(.user-is-tabbing) a:focus {
     } 
 }
 
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 9999;
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+}
+
+.lightbox__img {
+  position: relative;
+  max-width: min(1100px, 92vw);
+  max-height: 88vh;
+  border-radius: 10px;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.45);
+}
+
+
 
