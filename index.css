@@ -599,15 +599,6 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 0; /* keep 0 because parent controls rounding */
 }
 
-.work__text {
-  padding-right: 2rem;
-}
-
-@media (min-width: 901px) {
-  .work__image-box {
-    margin-left: 6rem; /* reduce from 10rem if it feels too wide */
-  }
-}
 
 .work__code {
   height: 3rem;
@@ -757,6 +748,7 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 10px;
   box-shadow: 0 24px 70px rgba(0,0,0,0.45);
 }
+
 
 
 
