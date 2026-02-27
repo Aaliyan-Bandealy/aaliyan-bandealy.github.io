@@ -440,17 +440,29 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Work ----- */
 /* --------------------------------------- */
 
-/* Project image hover pop */
-.work__image-box {
-  overflow: hidden;
-  border-radius: 6px; /* match your style */
-}
+/* ----- Work ----- */
 
 /* Make My Work section white */
 .work {
   background-color: #ffffff;
-  color: #111111;   /* dark text for readability */
+  color: #111111;
   padding: 8rem 0;
+}
+
+.work h2,
+.work h3,
+.work p,
+.work li,
+.work a,
+.work .link__text {
+  color: #111111;
+}
+
+/* Project image hover pop */
+.work__image-box {
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: var(--gutter-normal);
 }
 
 .work__image {
@@ -668,6 +680,7 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 10px;
   box-shadow: 0 24px 70px rgba(0,0,0,0.45);
 }
+
 
 
 
