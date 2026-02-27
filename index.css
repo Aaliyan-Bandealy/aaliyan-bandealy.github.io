@@ -579,16 +579,7 @@ body:not(.user-is-tabbing) a:focus {
   }
 }
 
-/* GitHub icon visible on white background */
-.work__code {
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,0.15);
-  border-radius: 10px;
-  padding: 0.8rem;
-  height: 4rem;              /* you can tweak */
-  width: 4rem;               /* makes it square */
-  box-sizing: border-box;
-}
+
 
 .work__code:hover {
   transform: scale(1.08);
@@ -758,6 +749,7 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 10px;
   box-shadow: 0 24px 70px rgba(0,0,0,0.45);
 }
+
 
 
 
