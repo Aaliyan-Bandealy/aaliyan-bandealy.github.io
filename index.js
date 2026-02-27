@@ -40,4 +40,38 @@ window.addEventListener("scroll", () => {
     isBackToTopRendered = false;
     alterStyles(isBackToTopRendered);
   }
+})
+
+
+// Lightbox for project images
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxBackdrop = document.getElementById('lightboxBackdrop');
+
+function openLightbox(src, alt) {
+  lightboxImg.src = src;
+  lightboxImg.alt = alt || 'Project image';
+  lightbox.classList.add('is-open');
+  lightbox.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('is-open');
+  lightbox.setAttribute('aria-hidden', 'true');
+  lightboxImg.src = '';
+  document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.work__image').forEach(img => {
+  img.addEventListener('click', () => openLightbox(img.src, img.alt));
 });
+
+lightboxBackdrop?.addEventListener('click', closeLightbox);
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && lightbox.classList.contains('is-open')) {
+    closeLightbox();
+  }
+});
+
