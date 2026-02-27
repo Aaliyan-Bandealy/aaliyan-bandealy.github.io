@@ -618,12 +618,9 @@ body:not(.user-is-tabbing) a:focus {
   }
 }
 
+/* Make GitHub icon dark inside white work section */
 .work__code {
   filter: invert(1) brightness(0);
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,0.15);
-  border-radius: 8px;
-  padding: 0.6rem;
 }
 
 /* --------------------------------------- */
@@ -761,6 +758,7 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 10px;
   box-shadow: 0 24px 70px rgba(0,0,0,0.45);
 }
+
 
 
 
