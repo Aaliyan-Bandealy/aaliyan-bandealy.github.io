@@ -542,6 +542,27 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+/* Card styling for each project box */
+.work__box {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 12px;
+  padding: 3.2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* Give spacing between cards */
+.work__box:not(:last-child) {
+  margin-bottom: 10rem; /* reduce from 25rem */
+}
+
+@media (max-width: 500px) {
+  .work__box:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+
+
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
@@ -677,6 +698,7 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 10px;
   box-shadow: 0 24px 70px rgba(0,0,0,0.45);
 }
+
 
 
 
