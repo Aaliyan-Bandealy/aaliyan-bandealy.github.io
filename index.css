@@ -446,6 +446,13 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 6px; /* match your style */
 }
 
+/* Make My Work section white */
+.work {
+  background-color: #ffffff;
+  color: #111111;   /* dark text for readability */
+  padding: 8rem 0;
+}
+
 .work__image {
   display: block;
   width: 100%;
@@ -661,6 +668,7 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 10px;
   box-shadow: 0 24px 70px rgba(0,0,0,0.45);
 }
+
 
 
 
