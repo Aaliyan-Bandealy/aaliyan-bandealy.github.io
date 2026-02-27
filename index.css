@@ -444,7 +444,7 @@ body:not(.user-is-tabbing) a:focus {
 
 /* Make My Work section white */
 .work {
-  background-color: #ffffff;
+  background-color: #feffea;
   color: #111111;
   padding: 8rem 0;
 }
@@ -680,6 +680,7 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 10px;
   box-shadow: 0 24px 70px rgba(0,0,0,0.45);
 }
+
 
 
 
