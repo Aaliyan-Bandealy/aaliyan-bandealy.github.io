@@ -303,7 +303,7 @@ body:not(.user-is-tabbing) a:focus {
     position: fixed;
     bottom: 4rem;
     right: 4rem;
-    display: flex;
+    display: ;
     justify-content: center;
     align-items: center;
     height: 5.5rem;
@@ -336,7 +336,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .nav {
-    display: flex;
+    display: ;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
 }
@@ -526,7 +526,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__text {
-    flex: 0 0 30%;
+    flex: 0 0 42%;
 }
 
 .work__list {
@@ -748,6 +748,7 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 10px;
   box-shadow: 0 24px 70px rgba(0,0,0,0.45);
 }
+
 
 
 
