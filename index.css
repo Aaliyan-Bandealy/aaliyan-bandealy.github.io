@@ -595,6 +595,19 @@ body:not(.user-is-tabbing) a:focus {
   box-shadow: 0 10px 20px rgba(0,0,0,0.10);
 }
 
+/* Border around project images */
+.work__image-box {
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 12px;
+  overflow: hidden; /* keeps border radius clean */
+  background: #ffffff;
+}
+
+/* Optional: make image slightly rounded inside too */
+.work__image {
+  border-radius: 0; /* keep 0 because parent controls rounding */
+}
+
 
 /* --------------------------------------- */
 /* ----- Clients ----- */
@@ -731,6 +744,7 @@ body:not(.user-is-tabbing) a:focus {
   border-radius: 10px;
   box-shadow: 0 24px 70px rgba(0,0,0,0.45);
 }
+
 
 
 
