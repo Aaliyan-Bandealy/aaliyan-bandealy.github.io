@@ -303,7 +303,7 @@ body:not(.user-is-tabbing) a:focus {
     position: fixed;
     bottom: 4rem;
     right: 4rem;
-    display: ;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 5.5rem;
@@ -336,7 +336,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .nav {
-    display: ;
+    display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
 }
@@ -462,7 +462,7 @@ body:not(.user-is-tabbing) a:focus {
 /* Make the "View Code" link pop on hover */
 .work .link__text {
   border-bottom: 2px solid var(--pink);
-  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  transition: transform 0.6s ease, background 0.6s ease, color 0.6s ease;
   border-radius: 6px;
 }
 
@@ -478,40 +478,57 @@ body:not(.user-is-tabbing) a:focus {
 
 /* Project image hover pop */
 .work__image-box {
-  overflow: hidden;
   border-radius: 6px;
   margin-bottom: var(--gutter-normal);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.35s ease;
+}
+
+.work__image-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
 }
 
 .work__image {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 6px;
   transform: scale(1);
-  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+  transition: transform 0.35s ease;
   cursor: pointer;
 }
 
 .work__image:hover {
-  transform: scale(1.04);
-  filter: saturate(1.05) contrast(1.02);
-  box-shadow: 0 16px 35px rgba(0,0,0,0.25);
+  transform: scale(1.05);
 }
 
 .work__box {
     display: flex;
     align-items: center;
+    background: rgba(255, 50, 88, 0.05);
+    padding: 4.5rem;
+    border-left: 4px solid var(--pink);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.work__box:hover {
+    box-shadow: 0 8px 25px rgba(255, 50, 88, 0.15);
+    transform: translateY(-4px);
 }
 
 @media(max-width: 900px) {
     .work__box {
         align-items: initial;
         flex-direction: column-reverse;
+        padding: 3.5rem;
     }
 }
 
 .work__box:not(:last-child) {
-    margin-bottom: 25rem;
+    margin-bottom: 28rem;
 }
 
 @media(max-width: 500px) {
@@ -526,13 +543,32 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__text {
-    flex: 0 0 42%;
+    flex: 0 0 38%;
 }
 
 .work__list {
-    /* list-style-type: square; */
-    list-style-position: inside;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
     margin-bottom: var(--gutter-normal);
+}
+
+.work__list li {
+    display: inline-block;
+    background: var(--pink);
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.work__list li:hover {
+    background: #ff1842;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 50, 88, 0.3);
 }
 
 .work__code {
