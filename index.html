@@ -20,7 +20,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
 
   <!-- Put your site title here -->
   <title>
@@ -42,7 +42,6 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -52,15 +51,23 @@
         </ul>
       </nav>
     </div>
+    <div id="particles-js"></div>
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
-          <span>Aaliyan Bandealy</span>
+          <span>Hi I'm Aaliyan</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>A Data Analyst based in Sydney, Australia.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <p>A data analyst turning complex data into actionable insights</p>
+        <ul class="header__skills" aria-label="Core skills">
+          <li>Python</li>
+          <li>SQL</li>
+          <li>Machine Learning</li>
+          <li>Data Visualization</li>
+          <li>Data Engineering</li>
+        </ul>
+        <a href="#contact" class="btn btn--pink btn--hero">Get in touch</a>
       </div>
     </div>
   </header>
@@ -111,106 +118,76 @@
          alt="Car Price Prediction Project" />
   </div>
 </div>
-          
+
           <div class="work__box">
             <div class="work__text">
-              <h3>Portfolio Template</h3>
+              <h3>Gym Management System</h3>
               <p>
-                A free Portfolio for anyone to use for free.
+                Built a comprehensive database system for gym operations with optimized schema design and complex SQL queries for member management and class scheduling.
               </p>
+
               <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
+                <li>MySQL</li>
+                <li>DB Design</li>
+                <li>ER Diagrams</li>
+                <li>SQL</li>
               </ul>
 
               <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="https://github.com/Aaliyan-Bandealy/Aaliyan-Bandealy-Gym-Database-Design-SQL" 
+                   target="_blank"
+                   class="link__text">
+                  View Code <span>&rarr;</span>
                 </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                <a href="https://github.com/Aaliyan-Bandealy/Aaliyan-Bandealy-Gym-Database-Design-SQL"
+                   target="_blank">
+                  <img src="./images/github.svg"
+                       class="work__code"
+                       alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <img src="./images/gym-database-cover.png"
+                   class="work__image"
+                   alt="Gym Database Management Project" />
             </div>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3>Queensland Crash Data Analysis</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Built an interactive Tableau dashboard analyzing Queensland road crash data with geospatial heatmaps and temporal trend analysis to identify high-risk areas and safety patterns.
               </p>
+
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Tableau</li>
+                <li>Geospatial Analysis</li>
+                <li>Data Visualization</li>
+                <li>Data Cleaning</li>
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
+                <a href="https://public.tableau.com/app/profile/aaliyan.bandealy/viz/Queensland_Crash_Data_Analysis/FinalDashboard" 
+                   target="_blank"
+                   class="link__text">
+                  View Dashboard <span>&rarr;</span>
                 </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                <a href="https://github.com/Aaliyan-Bandealy/Queensland-Crash-Data-Dashboard"
+                   target="_blank">
+                  <img src="./images/github.svg"
+                       class="work__code"
+                       alt="GitHub">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <img src="./images/crash-dashboard.png"
+                   class="work__image"
+                   alt="Queensland Crash Data Analysis Project" />
             </div>
           </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ***** Clients ***** -->
-
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
         </div>
       </div>
     </section>
@@ -221,21 +198,25 @@
       <div class="row">
         <h2>About Me</h2>
         <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
-            </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
-          </div>
-
           <div class="about__photo-container">
             <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+            <img class="about__photo" src="./images/aaliyan-bandealy1.jpg" alt="Aaliyan Bandealy" />
+          </div>
+          
+          <div class="about__text">
+            <p>
+              Hi, I'm Aaliyan Bandealy, currently pursuing a Master's in Business Analytics at Macquarie University in Sydney.
+            </p>
+            <p>
+              I enjoy working with data to understand patterns, answer questions, and turn information into actionable insights that drive decisions. Most of my projects involve Python, SQL, and data visualization tools, where I analyze datasets and build dashboards or models to explore real-world problems.
+            </p>
+            <p>
+              Alongside my studies, I've gained practical work experience across various roles, which has helped me develop discipline, teamwork, and the ability to stay calm in fast-paced environments.
+            </p>
+            <p>
+              When I'm not working with data, I enjoy sports, exploring new technologies, and building small projects to keep learning.
+            </p>
+            <a href="./images/Aaliyan%20Bandealy-Resume.pdf" class="btn" target="_blank" rel="noopener noreferrer">My Resume</a>
           </div>
         </div>
       </div>
@@ -249,12 +230,10 @@
       <h2>Get in Touch</h2>
       <div class="contact__info">
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
+          I'm always open to connecting with people interested in data, analytics, and technology. Whether it's discussing ideas, collaborating on a project, or exploring new opportunities, feel free to reach out.
+        </p>
+        <p>
+          The easiest way to contact me is via email.
         </p>
         <!-- Replace the email with yours -->
         <a href="mailto:aaliyan.bandealy55@gmail.com" class="btn">aaliyan.bandealy55@gmail.com</a>
@@ -291,6 +270,7 @@
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="./index.js"></script>
   
 
